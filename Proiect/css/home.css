@@ -67,7 +67,7 @@ main {
     height: 100vh;
     justify-content: center;
 
-    background-image: url("../Images/backround.jpg");
+    background-image: url("../Images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

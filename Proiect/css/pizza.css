@@ -7,6 +7,8 @@ body {
     flex-direction: column;
     height: 100%;
     margin: 0;
+
+    background-image: url("../Images/background3.jpg");  
 }
 
 header {
@@ -52,6 +54,7 @@ header {
    text-decoration: none;
 }
 
+
 /* ////////////////////////////////////////////////////////////////////////////// */
 
 .produse {
@@ -82,6 +85,7 @@ header {
 
 .card-pizza-text-container1 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 
@@ -102,6 +106,7 @@ header {
 
 .card-pizza-text-container2 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 
@@ -122,6 +127,7 @@ header {
 
 .card-pizza-text-container3 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 
@@ -143,6 +149,7 @@ header {
 
 .card-pizza-text-container4 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////// */
@@ -171,6 +178,7 @@ header {
 
 .card-pizza-text-container5 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 
@@ -191,6 +199,7 @@ header {
 
 .card-pizza-text-container6 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 
@@ -211,6 +220,7 @@ header {
 
 .card-pizza-text-container7 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 
@@ -232,6 +242,7 @@ header {
 
 .card-pizza-text-container8 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////// */
@@ -260,6 +271,7 @@ header {
 
 .card-pizza-text-container9 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 
@@ -280,6 +292,7 @@ header {
 
 .card-pizza-text-container10 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 
@@ -300,6 +313,7 @@ header {
 
 .card-pizza-text-container11 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 
@@ -321,6 +335,7 @@ header {
 
 .card-pizza-text-container12 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -349,6 +364,7 @@ header {
 
 .card-pizza-text-container13 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 
@@ -369,6 +385,7 @@ header {
 
 .card-pizza-text-container14 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 
@@ -389,6 +406,7 @@ header {
 
 .card-pizza-text-container15 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 
@@ -410,6 +428,7 @@ header {
 
 .card-pizza-text-container16 {
     padding: 2px 16px;
+    background-color: white;
 }
 
 

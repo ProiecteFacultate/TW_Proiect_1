@@ -27,11 +27,16 @@ header {
     width: 50%;
 }
 
+#headerNav > img {
+    width: 7vw;
+}
+
 #headerNav > a:hover {
     color: rgb(209, 136, 0);
 }
 
 .headerNavActualElement {
+    align-self: center;
     color: red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -39,6 +44,7 @@ header {
  }
 
 .headerNavElement {
+   align-self: center;
    color: black;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-weight: bold;
@@ -84,7 +90,7 @@ main {
     margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: antiquewhite;
+    background-color: rgb(255, 245, 233);
 }
 
 #programLeft {
@@ -103,12 +109,82 @@ main {
 
 /*  //////////////////////////////////////////////////////////////////*/
 
+#produse-h1 {
+    display: block;
+    align-self: center;
+    margin-top: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.categorii {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 .card-pizza {
-    width: 40%;
+    width: fit-content;
+    margin: 5%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    text-decoration: none;
+    color: black;
+}
+
+.card-pizza:hover {
+    transform: scale(1.1);
 }
 
 .card-pizza-text-container {
     padding: 2px 16px;
+}
+
+.card-deserturi {
+    width: fit-content;
+    margin: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+}
+
+.card-deserturi:hover {
+    transform: scale(1.1);
+}
+
+
+.card-deserturi-text-container {
+    padding: 2px 16px;
+}
+
+.card-bauturi {
+    width: fit-content;
+    margin: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+}
+
+.card-bauturi:hover {
+    transform: scale(1.1);
+}
+
+.card-bauturi-text-container {
+    padding: 2px 16px;
+}
+
+/* /////////////////////////////////////////////////// */
+
+footer {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 100%;
+    background-color: black;
+}
+
+#footer-logo {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }

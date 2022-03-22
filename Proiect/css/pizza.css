@@ -1,0 +1,430 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(124, 236, 189);
+    z-index: 1;
+}
+
+#headerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 50%;
+}
+
+#headerNav > img {
+    width: 7vw;
+}
+
+#headerNav > a:hover {
+    color: rgb(209, 136, 0);
+}
+
+.headerNavActualElement {
+    align-self: center;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+ }
+
+.headerNavElement {
+   align-self: center;
+   color: black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+.produse {
+    margin-top: 5%;
+}
+
+.prouse-line-1
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card-pizza1 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza1:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container1 {
+    padding: 2px 16px;
+}
+
+
+.card-pizza2 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza2:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container2 {
+    padding: 2px 16px;
+}
+
+
+.card-pizza3 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza3:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container3 {
+    padding: 2px 16px;
+}
+
+
+
+.card-pizza4 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza4:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container4 {
+    padding: 2px 16px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+.prouse-line-2
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card-pizza5 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza5:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container5 {
+    padding: 2px 16px;
+}
+
+
+.card-pizza6 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza6:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container6 {
+    padding: 2px 16px;
+}
+
+
+.card-pizza7 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza7:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container7 {
+    padding: 2px 16px;
+}
+
+
+
+.card-pizza8 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza8:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container8 {
+    padding: 2px 16px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+.prouse-line-3
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card-pizza9 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza9:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container9 {
+    padding: 2px 16px;
+}
+
+
+.card-pizza10 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza10:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container10 {
+    padding: 2px 16px;
+}
+
+
+.card-pizza11 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza11:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container11 {
+    padding: 2px 16px;
+}
+
+
+
+.card-pizza12 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza12:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container12 {
+    padding: 2px 16px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.prouse-line-4
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card-pizza13 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza13:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container13 {
+    padding: 2px 16px;
+}
+
+
+.card-pizza14 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza14:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container14 {
+    padding: 2px 16px;
+}
+
+
+.card-pizza15 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza15:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container15 {
+    padding: 2px 16px;
+}
+
+
+
+.card-pizza16 {
+    width: fit-content;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transform: scale(0.8);
+}
+
+.card-pizza16:hover {
+    transform: scale(0.9);
+}
+
+.card-pizza-text-container16 {
+    padding: 2px 16px;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+footer {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 100%;
+    background-color: black;
+}
+
+#footer-logo {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}

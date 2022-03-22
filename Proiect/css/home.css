@@ -16,6 +16,7 @@ header {
     position: fixed;
     width: 100%;
     height: 8vh;
+    background-color: white;
 }
 
 #headerNav {
@@ -26,8 +27,19 @@ header {
     width: 50%;
 }
 
+#headerNav > a:hover {
+    color: rgb(209, 136, 0);
+}
+
+.headerNavActualElement {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+ }
+
 .headerNavElement {
-   color: white;
+   color: black;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-weight: bold;
    text-decoration: none;
@@ -64,6 +76,8 @@ main {
     font-size: 60px;
 }
 
+/* /////////////////////////////////////////////////////////////////////// */
+
 .program {
     display: flex;
     justify-content: space-between;
@@ -84,4 +98,17 @@ main {
     justify-content: flex-end;
     flex-direction: column;
     width: 45%;
+}
+
+
+/*  //////////////////////////////////////////////////////////////////*/
+
+.card-pizza {
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card-pizza-text-container {
+    padding: 2px 16px;
 }

@@ -77,7 +77,7 @@ header {
     flex-direction: row;
 }
 
-.card-pizza1 {
+.card-desert1 {
     width: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -88,17 +88,17 @@ header {
     transform: scale(0.8);
 }
 
-.card-pizza1:hover {
+.card-desert1:hover {
     transform: scale(0.9);
 }
 
-.card-pizza-text-container1 {
+.card-desert-text-container1 {
     padding: 2px 16px;
     background-color: white;
 }
 
 
-.card-pizza2 {
+.card-desert2 {
     width: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -109,17 +109,17 @@ header {
     transform: scale(0.8);
 }
 
-.card-pizza2:hover {
+.card-desert2:hover {
     transform: scale(0.9);
 }
 
-.card-pizza-text-container2 {
+.card-desert-text-container2 {
     padding: 2px 16px;
     background-color: white;
 }
 
 
-.card-pizza3 {
+.card-desert3 {
     width: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -130,18 +130,18 @@ header {
     transform: scale(0.8);
 }
 
-.card-pizza3:hover {
+.card-desert3:hover {
     transform: scale(0.9);
 }
 
-.card-pizza-text-container3 {
+.card-desert-text-container3 {
     padding: 2px 16px;
     background-color: white;
 }
 
 
 
-.card-pizza4 {
+.card-desert4 {
     width: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -152,11 +152,11 @@ header {
     transform: scale(0.8);
 }
 
-.card-pizza4:hover {
+.card-desert4:hover {
     transform: scale(0.9);
 }
 
-.card-pizza-text-container4 {
+.card-desert-text-container4 {
     padding: 2px 16px;
     background-color: white;
 }
@@ -170,7 +170,7 @@ header {
     flex-direction: row;
 }
 
-.card-pizza5 {
+.card-desert5 {
     width: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -181,17 +181,17 @@ header {
     transform: scale(0.8);
 }
 
-.card-pizza5:hover {
+.card-desert5:hover {
     transform: scale(0.9);
 }
 
-.card-pizza-text-container5 {
+.card-desert-text-container5 {
     padding: 2px 16px;
     background-color: white;
 }
 
 
-.card-pizza6 {
+.card-desert6 {
     width: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -202,17 +202,17 @@ header {
     transform: scale(0.8);
 }
 
-.card-pizza6:hover {
+.card-desert6:hover {
     transform: scale(0.9);
 }
 
-.card-pizza-text-container6 {
+.card-desert-text-container6 {
     padding: 2px 16px;
     background-color: white;
 }
 
 
-.card-pizza7 {
+.card-desert7 {
     width: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -223,18 +223,18 @@ header {
     transform: scale(0.8);
 }
 
-.card-pizza7:hover {
+.card-desert7:hover {
     transform: scale(0.9);
 }
 
-.card-pizza-text-container7 {
+.card-desert-text-container7 {
     padding: 2px 16px;
     background-color: white;
 }
 
 
 
-.card-pizza8 {
+.card-desert8 {
     width: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -245,11 +245,11 @@ header {
     transform: scale(0.8);
 }
 
-.card-pizza8:hover {
+.card-desert8:hover {
     transform: scale(0.9);
 }
 
-.card-pizza-text-container8 {
+.card-desert-text-container8 {
     padding: 2px 16px;
     background-color: white;
 }
@@ -263,7 +263,7 @@ header {
     flex-direction: row;
 }
 
-.card-pizza9 {
+.card-desert9 {
     width: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -274,17 +274,17 @@ header {
     transform: scale(0.8);
 }
 
-.card-pizza9:hover {
+.card-desert9:hover {
     transform: scale(0.9);
 }
 
-.card-pizza-text-container9 {
+.card-desert-text-container9 {
     padding: 2px 16px;
     background-color: white;
 }
 
 
-.card-pizza10 {
+.card-desert10 {
     width: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -295,17 +295,17 @@ header {
     transform: scale(0.8);
 }
 
-.card-pizza10:hover {
+.card-desert10:hover {
     transform: scale(0.9);
 }
 
-.card-pizza-text-container10 {
+.card-desert-text-container10 {
     padding: 2px 16px;
     background-color: white;
 }
 
 
-.card-pizza11 {
+.card-desert11 {
     width: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -316,111 +316,18 @@ header {
     transform: scale(0.8);
 }
 
-.card-pizza11:hover {
+.card-desert11:hover {
     transform: scale(0.9);
 }
 
-.card-pizza-text-container11 {
-    padding: 2px 16px;
-    background-color: white;
-}
-
-
-
-.card-pizza12 {
-    width: fit-content;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    text-decoration: none;
-    color: black;
-    transform: scale(0.8);
-}
-
-.card-pizza12:hover {
-    transform: scale(0.9);
-}
-
-.card-pizza-text-container12 {
-    padding: 2px 16px;
-    background-color: white;
-}
-
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-.produse-linie-4
-{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.card-pizza13 {
-    width: fit-content;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    text-decoration: none;
-    color: black;
-    transform: scale(0.8);
-}
-
-.card-pizza13:hover {
-    transform: scale(0.9);
-}
-
-.card-pizza-text-container13 {
-    padding: 2px 16px;
-    background-color: white;
-}
-
-
-.card-pizza14 {
-    width: fit-content;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    text-decoration: none;
-    color: black;
-    transform: scale(0.8);
-}
-
-.card-pizza14:hover {
-    transform: scale(0.9);
-}
-
-.card-pizza-text-container14 {
-    padding: 2px 16px;
-    background-color: white;
-}
-
-
-.card-pizza15 {
-    width: fit-content;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    text-decoration: none;
-    color: black;
-    transform: scale(0.8);
-}
-
-.card-pizza15:hover {
-    transform: scale(0.9);
-}
-
-.card-pizza-text-container15 {
+.card-desert-text-container11 {
     padding: 2px 16px;
     background-color: white;
 }
 
 
 
-.card-pizza16 {
+.card-desert12 {
     width: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -431,42 +338,11 @@ header {
     transform: scale(0.8);
 }
 
-.card-pizza16:hover {
+.card-desert12:hover {
     transform: scale(0.9);
 }
 
-.card-pizza-text-container16 {
-    padding: 2px 16px;
-    background-color: white;
-}
-
-
-/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-.produse-linie-5
-{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-
-.card-pizza17 {
-    width: fit-content;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    text-decoration: none;
-    color: black;
-    transform: scale(0.8);
-}
-
-.card-pizza17:hover {
-    transform: scale(0.9);
-}
-
-.card-pizza-text-container17 {
+.card-desert-text-container12 {
     padding: 2px 16px;
     background-color: white;
 }

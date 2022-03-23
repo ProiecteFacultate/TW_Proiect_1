@@ -1,0 +1,139 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+
+    background-image: url("../Images/background3.jpg");  
+}
+
+header {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(124, 236, 189);
+    z-index: 1;
+}
+
+#headerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 50%;
+}
+
+#headerNav > img {
+    width: 7vw;
+}
+
+#headerNav > a:hover {
+    color: rgb(209, 136, 0);
+}
+
+.headerNavActualElement {
+    align-self: center;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+ }
+
+.headerNavElement {
+   align-self: center;
+   color: black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#produs-h6 {
+    display: flex;
+    padding: 20px;
+    margin-top: 10%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    font-size: 3em;
+}
+
+.locatie {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+.mapContainer {
+    display: flex;
+    flex-direction: column;  
+    width: 40%;
+
+}
+
+#map { 
+    width: 450px;
+    height: 450px;
+    border: 10px solid rgb(212, 212, 212);
+}
+
+.info {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40%;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#contact-h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.contactDiv > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.contactDiv > ul > li {
+    margin: auto;
+    float: left;
+}
+
+.contactDiv > ul > li > a > img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+footer {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 100%;
+    background-color: black;
+}
+
+#footer-logo {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}

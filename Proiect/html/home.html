@@ -11,14 +11,24 @@
 
 <body>
     <header>
-        <nav id="headerNav">
-            <img src="../Images/logo2.jpg" alt="Logo" id="header-logo">
-            <a href="#top" class="headerNavActualElement">Home</a>
-            <a href="pizza.html" class="headerNavElement">Pizza</a>
-            <a href="deserturi.html" class="headerNavElement">Deserturi</a>
-            <a href="bauturi.html" class="headerNavElement">Bauturi</a>
+
+        <img src="../Images/pizza_icon2.jpg" alt="logo" id="animatedLogo">
+        <div class="navBar">
+
+            <a href="home.html" class="actualHeaderNavElement">Home</a>
+
+            <div class="dropdown">
+                <span class="headerNavElement">Mancare</span>
+                <div class="dropdown-content">
+                    <a href="pizza.html" class="dropDownElement">Pizza</a>
+                    <a href="deserturi.html" class="dropDownElement">Desert</a>
+                    <a href="bauturi.html" class="dropDownElement">Bautura</a>
+                </div>
+            </div>
+
             <a href="contact.html" class="headerNavElement">Contact</a>
-        </nav>
+
+        </div>
 
     </header>
 
@@ -56,7 +66,7 @@
 
         <div class="categorii">
 
-            <a href="pizza.html"  class="card-pizza">
+            <a href="pizza.html" class="card-pizza">
                 <div>
 
                     <img src="../Images/card_pizza.jpg" alt="Pizza" id="card-pizza-image">

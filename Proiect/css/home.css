@@ -17,6 +17,7 @@ header {
     width: 100%;
     height: 8vh;
     background-color: antiquewhite;
+    z-index: 1;
 }
 
 .navBar {
@@ -79,7 +80,7 @@ header {
     text-decoration: none;
 }
 
-#animatedLogo{
+#animatedLogo {
     width: 70px;
     height: 70px;
     position: relative;
@@ -88,11 +89,20 @@ header {
     animation-iteration-count: infinite;
 }
 
-@keyframes pizzaAnimation{
-    0% {left: 0vw}
-    50% {left: 60vw;}
-    100% {left: 0vw;}
+@keyframes pizzaAnimation {
+    0% {
+        left: 0vw
+    }
+
+    50% {
+        left: 60vw;
+    }
+
+    100% {
+        left: 0vw;
+    }
 }
+
 /* ////////////////////////////////////////////////////////////////// */
 
 main {
@@ -158,11 +168,66 @@ main {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.categorii {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+@media screen and (min-width: 1000px) {
+    .categorii {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
 }
+
+@media screen and (max-width: 1000px) {
+    .categorii {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card-pizza {
+        transform: scale(0.6);
+    }
+
+    .card-deserturi {
+        transform: scale(0.6);
+    }
+
+    .card-bauturi {
+        transform: scale(0.6);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card-pizza {
+        transform: scale(0.8);
+    }
+
+    .card-deserturi {
+        transform: scale(0.8);
+    }
+
+    .card-bauturi {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .card-pizza {
+        transform: scale(1);
+    }
+
+    .card-deserturi {
+        transform: scale(1);
+    }
+
+    .card-bauturi {
+        transform: scale(1);
+    }
+}
+
+
 
 .card-pizza {
     width: fit-content;

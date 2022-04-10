@@ -61,6 +61,28 @@ header {
     margin-top: 10%;
 }
 
+@media screen and (max-width: 1200px) {
+    .produse-linie-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produse-linie-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produse-linie-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produse-linie-4 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 #produs-h6 {
     display: flex;
     padding: 20px;
@@ -74,7 +96,6 @@ header {
 {
     display: flex;
     justify-content: center;
-    flex-direction: row;
 }
 
 .card-pizza1 {
@@ -167,7 +188,6 @@ header {
 {
     display: flex;
     justify-content: center;
-    flex-direction: row;
 }
 
 .card-pizza5 {
@@ -260,7 +280,6 @@ header {
 {
     display: flex;
     justify-content: center;
-    flex-direction: row;
 }
 
 .card-pizza9 {
@@ -353,7 +372,6 @@ header {
 {
     display: flex;
     justify-content: center;
-    flex-direction: row;
 }
 
 .card-pizza13 {

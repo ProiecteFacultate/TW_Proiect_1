@@ -70,11 +70,27 @@ header {
     font-size: 3em;
 }
 
+@media screen and (max-width: 1200px) {
+    .produse-linie-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produse-linie-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produse-linie-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .produse-linie-1
 {
     display: flex;
     justify-content: center;
-    flex-direction: row;
 }
 
 .card-desert1 {
@@ -167,7 +183,6 @@ header {
 {
     display: flex;
     justify-content: center;
-    flex-direction: row;
 }
 
 .card-desert5 {
@@ -260,7 +275,6 @@ header {
 {
     display: flex;
     justify-content: center;
-    flex-direction: row;
 }
 
 .card-desert9 {

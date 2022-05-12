@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/reviews.css" rel="stylesheet">
+    <script src="../js/reviews.js" defer></script>
+    <title>Reviews</title>
+</head>
+
+<body>
+    <header>
+        <nav id="headerNav">
+            <img src="../Images/logo2.jpg" alt="Logo">
+            <a href="home.html" class="headerNavElement">Home</a>
+            <a href="pizza.html" class="headerNavElement">Pizza</a>
+            <a href="deserturi.html" class="headerNavElement">Deserturi</a>
+            <a href="#top" class="headerNavActualElement">Bauturi</a>
+            <a href="contact.html" class="headerNavElement">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1 id="review-h6">&#9733 &#9733 &#9733 REVIEWS &#9733 &#9733 &#9733</h1>
+
+        <div id="reviewsList">
+            <% for(let comment of comments) { %>
+                <d class="commentDiv">
+                    <h3 class="commentAuthor">
+                        <%= comment['Author']%>
+                        :
+                    </h3>
+                    <p class="commentText">
+                        <%= comment['Comment']%>
+                    </p>
+                </d>
+
+                <% } %>
+        </div>
+
+        <form action="/test" method="post" id="commentForm">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" placeholder="Your Name" id="nameInput"><br><br>
+            
+            <label for="comment">Comment:</label><br>
+            <textarea type="text" name="comment" placeholder="Comment..." rows="4" cols="70" id="commentInput"></textarea><br><br>
+            
+            <button>Submit</button>
+        </form>
+
+    </main>
+
+</body>
+
+</html>

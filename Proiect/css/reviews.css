@@ -78,6 +78,9 @@ header {
 .commentDiv {
     border: solid 2px black;
     margin-bottom: 5%;
+    padding-left: 2em;
+    padding-right: 2em;
+    overflow-wrap: break-word;
 }
 
 #commentForm {

@@ -11,23 +11,9 @@ app.use('/Images', express.static(__dirname + '/Images'))
 app.use('/js', express.static(__dirname + '/js'))
 app.use(cors())
 
-let comments = [
-    {
-        'id' : 1,
-        'Author' : "John Lenn",
-        'Comment': "This is a comment"
-    },
-    {
-        'id' : 2,
-        'Author' : "Mark Lenn",
-        'Comment': "This is"
-    },
-    {
-        'id' : 3,
-        'Author' : "Ann Kerm",
-        'Comment': "Not on"
-    }
-]
+const data = require('./data.json')
+const fs = require('fs')
+
 
 const server = app.listen(8080, () => {
     console.log("LISTENING")
@@ -35,6 +21,8 @@ const server = app.listen(8080, () => {
 
 app.get('/reviews', (req, res) => {
     console.log("REQUEST ON /REVIEWS")
+    let comments = data["comments"]
+    
     res.render('reviews.ejs', {comments})
 })
 
@@ -51,7 +39,11 @@ app.post('/reviews/new', (req, res) => {
 })
 
 app.post('/test', (req, res) => {
-    console.log(req.body)
+  
+    let dataToWrite = data
+    dataToWrite['comments'].push(req.body)
+    fs.writeFileSync('./data.json', JSON.stringify(dataToWrite))
+    
     res.send(req.body)
 })
 

@@ -12,5 +12,19 @@
             "Author": "Ann Kerm",
             "Comment": "Not on"
         }
+    ],
+    "users": [
+        {
+            "Username": "user1",
+            "Password": "user1Pass"
+        },
+        {
+            "Username": "user2",
+            "Password": "user2pass"
+        },
+        {
+            "Username": "user3",
+            "Password": "user3Pass"
+        }
     ]
 }

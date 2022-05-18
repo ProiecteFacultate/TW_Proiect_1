@@ -15,7 +15,7 @@ commentForm.onsubmit = (event) => {
   console.log(reqObject)
 
   const Http = new XMLHttpRequest();
-  const url = 'http://localhost:8080/test';
+  const url = 'http://localhost:8080/reviews/new';
   Http.open("POST", url, true);
 
   Http.onreadystatechange = () => {
@@ -24,7 +24,7 @@ commentForm.onsubmit = (event) => {
         let resObject = JSON.parse(Http.responseText)
 
         let authorH3 = document.createElement('h3')
-        authorH3.innerHTML = "Author: " + resObject['Author']
+        authorH3.innerHTML = resObject['Author'] + ":"
         authorH3.classList.add("commentAuthor")
 
         let commentText = document.createElement('p')

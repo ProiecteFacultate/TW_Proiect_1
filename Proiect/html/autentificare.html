@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/autentificare.css" rel="stylesheet">
+    <script src="../js/autentificare.js" defer></script>
+    <title>Autentificare</title>
+</head>
+<body>
+
+    <header>
+        <nav id="headerNav">
+            <img src="../Images/logo2.jpg" alt="Logo">
+            <a href="home.html" class="headerNavElement">Home</a>
+            <a href="pizza.html" class="headerNavElement">Pizza</a>
+            <a href="deserturi.html" class="headerNavElement">Deserturi</a>
+            <a href="#top" class="headerNavElement">Bauturi</a>
+            <a href="contact.html" class="headerNavElement">Contact</a>
+            <a href="autentificare.html" class="headerNavActualElement">Autentificare</a>
+
+            <a href="http://localhost:8080/reviews" class="headerNavElement">Reviews</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <div id="signInDiv">
+            <form autocomplete="off" id="signInForm">
+                <label for="username">Username:</label><br>
+                <input type="text" name="signInUsername" placeholder="username..." id="signInUsernameInput"><br><br>
+                
+                <label for="password">Password:</label><br>
+                <input type="text" name="signInPassword" placeholder="password..." id="signInPasswordInput"><br><br>
+    
+                <button>Sign In</button>
+            </form>
+
+            <button id="switchToSignUpButton">Du-te la sign up</button>
+            <h3 id="signInResponseH3"></h3>
+    
+        </div>
+        
+        <div id="signUpDiv">
+            <form autocomplete="off" id="signUpForm">
+                <label for="username">Username:</label><br>
+                <input type="text" name="signUpUsername" placeholder="username..." id="signUpUsernameInput"><br><br>
+                
+                <label for="password">Password:</label><br>
+                <input type="text" name="signUpPassword" placeholder="password..." id="signUpPasswordInput"><br><br>
+    
+                <button>Sign Up</button>
+            </form>
+
+            <button id="switchToSignInButton">Du-te la sign in</button>
+            <h3 id="signUpResponseH3"></h3>
+
+        </div>
+        
+    </main>
+
+
+</body>
+</html>

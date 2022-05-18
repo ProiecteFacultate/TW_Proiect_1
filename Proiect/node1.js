@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const res = require('express/lib/response')
 const app = express()
-app.use(express.urlencoded({extended : true}))
+app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.set('view engine', 'ejs')
 app.use(express.static('html'))
@@ -22,28 +22,68 @@ const server = app.listen(8080, () => {
 app.get('/reviews', (req, res) => {
     console.log("REQUEST ON /REVIEWS")
     let comments = data["comments"]
-    
-    res.render('reviews.ejs', {comments})
+
+    res.render('reviews.ejs', { comments })
 })
 
 app.post('/reviews/new', (req, res) => {
-    console.log("REQUEST ON /REVIEWS/NEW")
-    const body = req.body
-    let newCom = {
-        'id': comments.length + 1,
-        'Author' : body['name'],
-        'Comment' : body['comment']
-    }
-    comments.push(newCom)
-    res.render('reviews.ejs', {comments})
-})
 
-app.post('/test', (req, res) => {
-  
     let dataToWrite = data
     dataToWrite['comments'].push(req.body)
     fs.writeFileSync('./data.json', JSON.stringify(dataToWrite))
-    
+
     res.send(req.body)
+})
+
+app.post('/signIn', (req, res) => {
+    console.log("REQUEST ON /SIGNIN")
+
+    let sentUsername = req.body['Username']
+    let sentPassword = req.body['Password']
+    let usersData = data['users']
+
+    let foundUsername = false
+
+    for (let user of usersData) {
+        if (user["Username"] == sentUsername && user["Password"] == sentPassword) {
+            res.send("Succes")
+            return
+        }
+        else if (user["Username"] == sentUsername)
+            foundUsername = true
+    }
+
+    if (foundUsername == true)
+        res.send("Parola gresita!")
+    else
+        res.send("Cont inexistent!")
+})
+
+
+app.post('/signUp', (req, res) => {
+    console.log("REQUEST ON /SIGUP")
+
+    let sentUsername = req.body['Username']
+    let sentPassword = req.body['Password']
+    let usersData = data['users']
+
+    let foundUsername = false
+
+    for (let user of usersData)
+        if (user['Username'] == sentUsername) {
+            res.send("Nume de utilizator deja existent!")
+            return
+        }
+
+    let newUser = {
+        "Username": sentUsername,
+        "Password": sentPassword
+    }
+
+    res.send("Succes")
+
+    let dataToWrite = data
+    dataToWrite['users'].push(newUser)
+    fs.writeFileSync('./data.json', JSON.stringify(dataToWrite))
 })
 

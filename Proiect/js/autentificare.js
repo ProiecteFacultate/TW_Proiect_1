@@ -22,6 +22,7 @@ signInForm.onsubmit = (event) => {
 
     let usernameValue = signInUsernameInput.value
     let passwordValue = signInPasswordInput.value
+
     let reqObject = {
         'Username': usernameValue,
         'Password': passwordValue
@@ -36,10 +37,15 @@ signInForm.onsubmit = (event) => {
         if (Http.readyState == 4) {
             if (Http.status == 200) {
                 let resObject = Http.responseText
-                if (resObject == "Succes")
+                if (resObject != "Parola gresita!" && resObject != "Cont inexistent!") {
+                    localStorage.setItem('username', resObject)
                     window.location.href = "home.html"
-                else
+                }
+                else {
                     signInResponseH3.innerHTML = resObject
+                    signInUsernameInput.value = ""
+                    signInPasswordInput.value = ""
+                }
 
             }
             else
@@ -73,10 +79,15 @@ signUpForm.onsubmit = (event) => {
         if (Http.readyState == 4) {
             if (Http.status == 200) {
                 let resObject = Http.responseText
-                if (resObject == "Succes")
+                if (resObject != "Nume de utilizator deja existent!") {
+                    localStorage.setItem('username', resObject)
                     window.location.href = "home.html"
-                else
+                }
+                else {
                     signUpResponseH3.innerHTML = resObject
+                    signUpUsernameInput.value = ""
+                    signUpPasswordInput.value = ""
+                }
 
             }
             else
@@ -90,14 +101,18 @@ signUpForm.onsubmit = (event) => {
 
 //////////////////////////////////////////////////////
 
-switchToSignUpButton.onclick = () =>
-{
+switchToSignUpButton.onclick = () => {
     signInDiv.style.display = "none"
     signUpDiv.style.display = "flex"
+
+    signInUsernameInput.value = ""
+    signInPasswordInput.value = ""
 }
 
-switchToSignInButton.onclick = () =>
-{
+switchToSignInButton.onclick = () => {
     signUpDiv.style.display = "none"
     signInDiv.style.display = "flex"
+
+    signUpUsernameInput.value = ""
+    signUpPasswordInput.value = ""
 }

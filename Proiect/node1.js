@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const res = require('express/lib/response')
 const app = express()
+//const session = require('express-session'); 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.set('view engine', 'ejs')
@@ -13,7 +14,6 @@ app.use(cors())
 
 const data = require('./data.json')
 const fs = require('fs')
-
 
 const server = app.listen(8080, () => {
     console.log("LISTENING")
@@ -46,7 +46,7 @@ app.post('/signIn', (req, res) => {
 
     for (let user of usersData) {
         if (user["Username"] == sentUsername && user["Password"] == sentPassword) {
-            res.send("Succes")
+            res.send(sentUsername)
             return
         }
         else if (user["Username"] == sentUsername)
@@ -80,7 +80,7 @@ app.post('/signUp', (req, res) => {
         "Password": sentPassword
     }
 
-    res.send("Succes")
+    res.send(sentUsername)
 
     let dataToWrite = data
     dataToWrite['users'].push(newUser)

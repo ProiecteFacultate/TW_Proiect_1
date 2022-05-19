@@ -32,8 +32,7 @@
             <% for(let comment of comments) { %>
                 <d class="commentDiv">
                     <h3 class="commentAuthor">
-                        <%= comment['Author']%>
-                        :
+                        <%= comment['Author']%>:
                     </h3>
                     <p class="commentText">
                         <%= comment['Comment']%>
@@ -43,10 +42,7 @@
                 <% } %>
         </div>
 
-        <form autocomplete="off" id="commentForm">
-            <label for="name">Name:</label><br>
-            <input type="text" name="name" placeholder="Your Name" id="nameInput"><br><br>
-            
+        <form autocomplete="off" id="commentForm">  
             <label for="comment">Comment:</label><br>
             <textarea type="text" name="comment" placeholder="Comment..." rows="4" cols="70" id="commentInput"></textarea><br><br>
             

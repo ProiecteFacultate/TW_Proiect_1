@@ -1,15 +1,15 @@
 const commentForm = document.getElementById("commentForm")
-const nameInput = document.getElementById("nameInput")
 const commentInput = document.getElementById("commentInput")
 const reviewsList = document.getElementById("reviewsList")
 
 commentForm.onsubmit = (event) => {
   event.preventDefault()
   
-  let nameValue = nameInput.value
+  let username = localStorage.getItem('username')
   let commentValue = commentInput.value
+  commentInput.value = ""
   let reqObject = {
-    'Author': nameValue,
+    'Author': username,
     'Comment': commentValue
   }
   console.log(reqObject)
